@@ -13,8 +13,8 @@ class TodoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../../views', 'todo');
-        $this->loadMigrationsFrom(__DIR__.'/../../migrations');
+        $this->loadViewsFrom(__DIR__.'/../views', 'todo');
+        $this->loadMigrationsFrom(__DIR__.'/../migrations');
     }
 
     /**
@@ -24,7 +24,7 @@ class TodoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //all the routes 
-        include __DIR__.'/../../routes.php';
+        //all the routes
+        include __DIR__.'/../routes.php';
     }
 }
