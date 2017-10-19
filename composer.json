@@ -9,5 +9,16 @@
             "email": "hmtareque@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "Tareque\\Todo\\": "src/"
+        }
+    }
 }
