@@ -5,13 +5,14 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
+          <h1>Pending Task</h1>
             <div class="container">
 
-                @if(Session::get('success'))  
+                @if(Session::get('success'))
                 <div class="alert alert-success">{{Session::get('success')}}</div>
-                @endif 
-                
-                
+                @endif
+
+
                 <div class="card">
                     <div class="card-header">
                         Pending Tasks
@@ -27,7 +28,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($tasks as $task) 
+                                @foreach($tasks as $task)
                                 <tr>
                                     <td>{{$task->task}}</td>
                                     <td>{{date('d M Y', strtotime($task->deadline))}}</td>
@@ -62,12 +63,12 @@
                                         </div>
                                     </td>
                                 </tr>
-                                @endforeach 
+                                @endforeach
                             </tbody>
                         </table>
-                        @else 
+                        @else
                         <div class="alert alert-warning">No task pending!</div>
-                        @endif 
+                        @endif
                     </div>
                 </div>
             </div>
