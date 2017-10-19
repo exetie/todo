@@ -3,7 +3,7 @@
     "description": "This is a package to implement TODO list",
     "type": "library",
     "require": {
-        "laravel/laravel": "5.0.0"
+        "laravel/laravel": "5.5.0"
     },
     "license": "MIT",
     "authors": [
